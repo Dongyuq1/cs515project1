@@ -29,7 +29,7 @@ def go_direction(command, current_room, inventory):
     # Parse the command string to extract the direction
     parts = command.split()
     if len(parts) != 2 or parts[0] != 'go':
-        print("Invalid command. Use 'go direction'.")
+        print("Sorry, you need to 'go' somewhere.")
         return current_room
 
     direction = parts[1]
@@ -55,7 +55,7 @@ def go_direction(command, current_room, inventory):
             display_room(next_room)
             return next_room
     else:
-        print("You can't go that way.")
+        print("There's no way to go", direction + '.')
         return current_room
 
 
