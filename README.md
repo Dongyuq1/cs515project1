@@ -6,7 +6,7 @@ This is a simple text adventure game, where the player navigates a series of roo
 
 - Name: Yuqi Dong
 - Stevens login: ydong28
-- Github URL: 
+- Github URL: https://github.com/Dongyuq1/cs515project1.git
 - Estimated project hours: 6h
 
 ## How to Play
