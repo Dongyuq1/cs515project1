@@ -14,7 +14,7 @@ This is a simple text adventure game, where the player navigates a series of roo
 1. Make sure you have Python installed.
 2. Download the game files.
 3. Open a command prompt or terminal window in the game directory.
-4. Run the game with the command `python game.py <filename>`, where `<filename>` is the name of the JSON file containing the game data.
+4. Run the game with the command `python adventure.py <filename>`, where `<filename>` is the name of the JSON file containing the game data.
 5. Follow the on-screen prompts to play the game. The commands are not case-sensitive.
 
 ## Commands
