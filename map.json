@@ -1,0 +1,58 @@
+[
+  {
+    "name": "The Entrance Hall",
+    "desc": "You step into the entrance hall of Dracula's castle, its walls lined with ornate red and gold wallpaper that has begun to peel and fade with age. A long carpet, once a rich crimson, stretches out before you, now threadbare and frayed. The room is dimly lit by flickering torches on the walls, casting eerie shadows that dance across the stone floor. You can hear the distant sound of bats fluttering their wings, and the ominous creaking of the old castle's wooden beams. The air is thick with a musty, ancient smell that assaults your nostrils. You feel a sense of foreboding, as if the very walls themselves are watching you.",
+    "exits": {"north": 7, "south": 2},
+    "items": ["health-potion", "dagger"]
+  },
+  {
+    "name": "The Library",
+    "desc": "The library is a massive room, filled to the brim with ancient tomes and dusty manuscripts. Bookshelves tower high above you, their wooden frames sagging with the weight of countless books. Cobwebs cling to every surface, and the air is thick with the smell of old paper. The room is dimly lit by a few flickering candles, casting long shadows across the stacks. You can hear the distant fluttering of pages turning, and the faint whispers of voices long gone. The library is so vast, it's difficult to know where to start your search.",
+    "exits": {"south": 5, "east": 0},
+    "items": ["magic-tome"]
+  },
+  {
+    "name": "The Crypt",
+    "desc": "You step into the crypt, the air thick with the smell of death and decay. Coffins line the walls, some of them cracked and broken, others still sealed shut. You can hear the faint sound of dripping water, and the rustling of rats in the shadows. The crypt is dimly lit by a few flickering candles, casting eerie shadows across the stone walls. You can feel the weight of centuries of darkness pressing down on you. You have a feeling that you are not alone in this place...",
+    "exits": {"north": 7, "west": 4},
+    "items": ["holy-water", "silver-knife", "master-key"]
+  },
+  {
+    "name": "The Ballroom",
+    "desc": "You enter the grand ballroom, the walls and floor covered in a thick layer of dust. Once, this room was filled with life and music, but now it is silent and still. The chandeliers overhead have long since lost their shine, and cobwebs cling to the ornate ceiling. The room is dimly lit by moonlight filtering in through the dusty windows. You can almost hear the echoes of long-forgotten waltzes, and the distant sound of a piano. As you step further into the room, you notice something strange about the mirrors that line the walls...",
+    "exits": {"west": 4, "south": 6},
+    "items": ["mirror-shard"]
+  },
+  {
+    "name": "The Tower",
+    "desc": "You climb a winding staircase that leads to a high tower overlooking the castle grounds. The wind whistles through the narrow windows, and you can feel the tower swaying in the breeze. As you reach the top, you notice that the tower is filled with strange machinery and arcane devices. Some of the machines emit sparks or emit a low hum, while others seem to be powered by strange glowing crystals. You feel a sense of unease as you realize that you are surrounded by powerful magic...",
+    "exits": {"west": 0},
+    "items": ["crystal-shard", "magic-spellbook"],
+    "locked": ["up"]
+  },
+  {
+    "name": "The Catacombs",
+    "desc": "You step into the catacombs, a maze of twisting tunnels and cramped passageways. The air is thick with the stench of rotting flesh and the sound of bones crunching underfoot. You can hear the whispers of the dead, their ghostly voices echoing through the darkness. As you move deeper into the catacombs, you notice that the walls are lined with ancient runes and symbols. You wonder if they hold some secret power...",
+    "exits": {"north": 1},
+    "items": ["skull-necklace", "bone-wand"]
+  },
+  {
+    "name": "The Chapel",
+    "desc": "You enter a grand chapel with stained glass windows and flickering candles. The air is thick with the smell of incense and the sound of chanting. You can see shadowy figures kneeling in prayer, their faces hidden behind hoods. You notice that some of the figures are holding wicked-looking weapons or muttering dark incantations. You wonder if they are friend or foe...",
+    "exits": {"north": 2},
+    "items": ["holy-water", "cross-necklace"]
+  },
+  {
+    "name": "The Laboratory",
+    "desc": "You enter a dark and musty laboratory filled with bubbling potions, sparking machines, and mysterious devices. Strange sounds fill the air, and you can see a faint green glow emanating from some of the beakers and vials. You notice that there are cages in the corner of the room, and something inside is moving. As you approach, you realize that it's not an animal, but a humanoid figure with glowing eyes and a pale complexion. You wonder what dark experiments have been conducted here...",
+    "exits": {"north": 1, "east": 0},
+    "items": ["potion-of-regeneration", "vial-of-acid"],
+    "locked": ["up"]
+  },
+  {
+    "name": "The Clock Tower",
+    "desc": "You ascend a towering clock tower, its gears and mechanisms ticking and clanging loudly all around you. The stairs and platforms are narrow and winding, and you must be careful not to slip and fall. As you climb higher, you can see the gears turning faster and faster, and you can feel the tower vibrating beneath your feet. You wonder how long it has been since the clock tower was last wound, and what might happen if it were to stop ticking...",
+    "exits": {"west": 3},
+    "items": ["hourglass", "gear-necklace"]
+  }
+]
