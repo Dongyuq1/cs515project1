@@ -21,7 +21,7 @@ def display_room(room):
     print(room['desc'])
     print()
     if 'items' in room and room['items']:
-        print('Items:', ' '.join(room['items']))
+        print('Items:', ', '.join(room['items']))
         print()
     print('Exits:', ' '.join(room['exits']))
     print()
