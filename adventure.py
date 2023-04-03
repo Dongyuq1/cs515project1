@@ -4,6 +4,7 @@ import sys
 
 if len(sys.argv) < 2:
     print('Usage: python program.py <filename>')
+    print()
     sys.exit(1)
 
 filename = sys.argv[1]
@@ -16,10 +17,14 @@ def display_room(room):
     look
     """
     print(">" + room['name'])
+    print()
     print(room['desc'])
+    print()
     if 'items' in room and room['items']:
         print('Items:', ', '.join(room['items']))
+        print()
     print('Exits:', ', '.join(room['exits']))
+    print()
 
 
 def go_direction(command, current_room, inventory):
@@ -30,6 +35,7 @@ def go_direction(command, current_room, inventory):
     parts = command.split()
     if len(parts) != 2 or parts[0] != 'go':
         print("Sorry, you need to 'go' somewhere.")
+        print()
         return current_room
 
     direction = parts[1]
@@ -44,18 +50,22 @@ def go_direction(command, current_room, inventory):
             if 'master-key' in inventory:
                 # Move to the next room
                 print('You go', direction + '.')
+                print()
                 display_room(next_room)
                 return next_room
             else:
                 print("The room is locked. You need the master key to enter.")
+                print()
                 return current_room
         else:
             # Move to the next room
             print('You go', direction + '.')
+            print()
             display_room(next_room)
             return next_room
     else:
         print("There's no way to go", direction + '.')
+        print()
         return current_room
 
 
@@ -65,7 +75,8 @@ def get_item(command, current_room, inventory):
     """
     parts = command.split()
     if len(parts) != 2 or parts[0] != 'get':
-        print("Invalid command. Use 'get item'.")
+        print("Sorry, you need to 'get' something.")
+        print()
         return current_room, inventory
     item_name = parts[1]
 
@@ -75,9 +86,11 @@ def get_item(command, current_room, inventory):
         current_room['items'].remove(item_name)
         inventory.append(item_name)
         print('You pick up the', item_name + '.')
+        print()
         return current_room, inventory
     else:
         print("There's no", item_name, "anywhere.")
+        print()
         return current_room, inventory
 
 
@@ -87,7 +100,8 @@ def drop_item(command, current_room, inventory):
     """
     parts = command.split()
     if len(parts) != 2 or parts[0] != 'drop':
-        print("Invalid command. Use 'drop item'.")
+        print("Sorry, you need to 'drop' something.")
+        print()
         return current_room, inventory
     item_name = parts[1]
 
@@ -100,9 +114,11 @@ def drop_item(command, current_room, inventory):
         else:
             current_room['items'] = [item_name]
         print('You drop the', item_name + '.')
+        print()
         return current_room, inventory
     else:
         print("You don't have", item_name + '.')
+        print()
         return current_room, inventory
 
 
