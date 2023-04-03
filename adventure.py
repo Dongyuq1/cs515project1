@@ -35,7 +35,6 @@ def go_direction(command, current_room, inventory):
     parts = command.split()
     if len(parts) != 2 or parts[0] != 'go':
         print("Sorry, you need to 'go' somewhere.")
-        print()
         return current_room
 
     direction = parts[1]
@@ -55,7 +54,6 @@ def go_direction(command, current_room, inventory):
                 return next_room
             else:
                 print("The room is locked. You need the master key to enter.")
-                print()
                 return current_room
         else:
             # Move to the next room
@@ -65,7 +63,6 @@ def go_direction(command, current_room, inventory):
             return next_room
     else:
         print("There's no way to go", direction + '.')
-        print()
         return current_room
 
 
@@ -76,7 +73,6 @@ def get_item(command, current_room, inventory):
     parts = command.split()
     if len(parts) != 2 or parts[0] != 'get':
         print("Sorry, you need to 'get' something.")
-        print()
         return current_room, inventory
     item_name = parts[1]
 
@@ -86,11 +82,9 @@ def get_item(command, current_room, inventory):
         current_room['items'].remove(item_name)
         inventory.append(item_name)
         print('You pick up the', item_name + '.')
-        print()
         return current_room, inventory
     else:
         print("There's no", item_name, "anywhere.")
-        print()
         return current_room, inventory
 
 
@@ -101,7 +95,6 @@ def drop_item(command, current_room, inventory):
     parts = command.split()
     if len(parts) != 2 or parts[0] != 'drop':
         print("Sorry, you need to 'drop' something.")
-        print()
         return current_room, inventory
     item_name = parts[1]
 
@@ -114,11 +107,9 @@ def drop_item(command, current_room, inventory):
         else:
             current_room['items'] = [item_name]
         print('You drop the', item_name + '.')
-        print()
         return current_room, inventory
     else:
         print("You don't have", item_name + '.')
-        print()
         return current_room, inventory
 
 
