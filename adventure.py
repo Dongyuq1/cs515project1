@@ -16,7 +16,7 @@ def display_room(room):
     """
     look
     """
-    print(">" + room['name'])
+    print("> " + room['name'])
     print()
     print(room['desc'])
     print()
